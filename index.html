@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="">
+                <img id="logo" src="img/logo.png" alt="">
+            </a>
+
+            <span  id="menubar">
+                <i onclick="openmenu()" class="fa-solid fa-bars"></i>
+            </span>
+
+            <div id="openbar" class="navbarmenu">
+                <span id="closebar">
+                    <i onclick="closebar()" class="fa-solid fa-xmark"></i>
+                </span>
+                <a href="">
+                    <img id="barlogo" src="img/logo.png" alt="">
+                </a>
+
+                <menu class="barmenu">
+                    <li><a href="">Şirkət</a></li>
+                    <li><a href="">Müştəri Rəyləri</a></li>
+                    <li><a href="">Turlar</a></li>
+                    <li><a href="">Xidmətlər</a></li>
+                    <li><a href="">Əməkdaşlıq</a></li>
+                    <li><a href="">Azərbaycanı Kəşf Et</a></li>
+                    <li><a href="">Əlaqə</a></li>
+                </menu>
+
+                <button class="btn">Qiymet Teklifi al</button>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+
+                <ul class="lang-icons">
+                    <li>
+                        <a href="#">
+                            <img src="https://flagcdn.com/w20/az.png" alt="Azerbaijan Flag">
+                            AZ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://flagcdn.com/w20/gb.png" alt="UK Flag">
+                            EN
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://flagcdn.com/w20/ru.png" alt="Russia Flag">
+                            RU
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <menu class="hidden">
+                <div class="dropdwn">
+                    <li>
+                        <a href="">Şirkət</a>
+                        <ul>
+                            <li><a href="">Haqqımızda</a></li>
+                            <li><a href="">Sertifikatlar</a></li>
+                            <li><a href="">Karyera</a></li>
+                        </ul>
+                    </li>
+                </div>
+
+                <div class="dropdwn">
+                    <li>
+                        <a href="">Müştəri Rəyləri</a>
+                        <ul>
+                            <li><a href="">Müştəri Fikirləri</a></li>
+                            <li><a href="">Səyahət Görüntüləri</a></li>
+                        </ul>
+                    </li>
+                </div>
+
+                <div class="dropdwn">
+                    <li>
+                        <a href="">Turlar</a>
+                        <ul>
+                            <li><a href="">Daxili Turlar</a></li>
+                            <li><a href="">Xarici Turlar</a></li>
+                            <li><a href="">İnfo Turlar</a></li>
+                            <li><a href="">İntensiv Turlar</a></li>
+                            <li><a href="">Qrup Turlar</a></li>
+                            <li><a href="">Ekskursiyalar</a></li>
+                        </ul>
+                    </li>
+                </div>
+
+                <div class="dropdwn">
+                    <li>
+                        <a href="">Xidmətlər</a>
+                        <ul>
+                            <li><a href="">Viza Xidməti</a></li>
+                            <li><a href="">Bilet Satışı</a></li>
+                        </ul>
+                    </li>
+                </div>
+
+                <div class="dropdwn">
+                    <li>
+                        <a href="">Əməkdaşlıq</a>
+                        <ul>
+                            <li><a href="">Avia Şirkətlər</a></li>
+                            <li><a href="">Korporativ Əməkdaşlıq</a></li>
+                        </ul>
+                    </li>
+                </div>
+
+                <li><a href="">Azərbaycanı Kəşf Et</a></li>
+                <li><a href="">Əlaqə</a></li>
+            </menu>
+
+            <script>
+                let openbar = document.getElementById('openbar')
+
+                function openmenu(){
+                    openbar.style.right = '0'
+                }
+                function closebar(){
+                    openbar.style.right = '-100%'
+                }
+            </script>
+
+        </nav>
+    </header>
+</body>
+
+</html>
