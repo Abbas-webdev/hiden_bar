@@ -7,7 +7,7 @@
 }
 
 header {
-    background: url('img/bg1.jpg') center/cover;
+    background: url('img/bg1.jpg') 30% 70% /cover no-repeat;
     height: 100vh;
 }
 
